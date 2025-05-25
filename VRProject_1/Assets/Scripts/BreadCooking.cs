@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static Ingrediants;
 public class BreadCooking : MonoBehaviour
 {
     public Slider cookingSlider;
@@ -23,8 +24,13 @@ public class BreadCooking : MonoBehaviour
 
     private Renderer breadRenderer;
 
+    private Ingrediants ingrediants;
+
+
     void Start()
     {
+        ingrediants = GetComponent<Ingrediants>();
+
         breadRenderer = GetComponent<Renderer>();
         if (breadRenderer != null && defaultMaterial != null)
         {
@@ -52,6 +58,7 @@ public class BreadCooking : MonoBehaviour
                 {
                     breadRenderer.material = cookedMaterial;
                 }
+                ingrediants.SetBakeState(BakeState.Baked);
             }
         }
         else if (isCooking && isCooked && !isBurnt)
@@ -69,6 +76,8 @@ public class BreadCooking : MonoBehaviour
                 {
                     breadRenderer.material = burntMaterial;
                 }
+                ingrediants.SetBakeState(BakeState.Burned);
+
 
                 // 여기서 게임오버, 실패처리 등 추가 가능
             }
@@ -94,4 +103,5 @@ public class BreadCooking : MonoBehaviour
             isCooking = false;
         }
     }
+
 }
