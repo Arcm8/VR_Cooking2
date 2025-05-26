@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Ingrediants : MonoBehaviour
 {
-    public GameObject Bread_and_Bacon;
 
+    private bool isCombined = false;
     public enum BakeState
     {
         Raw,
@@ -20,13 +20,13 @@ public class Ingrediants : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void SetBakeState(BakeState newState)
     {
@@ -39,20 +39,26 @@ public class Ingrediants : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collition");
+        if (isCombined) return; // 이미 조합되었으면 무시
+
         if (other.CompareTag("Ingredient"))
         {
-            // 재료 객체 가져오기
             Ingrediants otherIngredient = other.GetComponent<Ingrediants>();
 
-            // 둘 다 구워졌을 경우만 조합 가능
+            // 상대도 이미 조합되었으면 무시
+            if (otherIngredient == null || otherIngredient.isCombined) return;
+
             if (CanCombineWith(otherIngredient))
             {
+                // 조합 처리
+                isCombined = true;
+                otherIngredient.isCombined = true;
+
                 CombineIngredients(other.gameObject, otherIngredient);
             }
             else
             {
-                Debug.Log("두 재료 중 하나가 제대로 구워지지 않았습니다.");
+                Debug.Log("하나 이상이 구워지지 않아 조합 불가");
             }
         }
     }
@@ -64,38 +70,29 @@ public class Ingrediants : MonoBehaviour
 
     private void CombineIngredients(GameObject otherObject, Ingrediants otherIngredient)
     {
-        string otherName = otherIngredient.ingredientName;
-        string resultProduct = "";
+        var combo = IngredientCombine.Instance.GetCombination(ingredientName, otherIngredient.ingredientName);
 
-        if ((ingredientName == "Bacon" && otherName == "Bread") ||
-            (ingredientName == "Bread" && otherName == "Bacon"))
+        if (combo != null)
         {
-            resultProduct = "Bread_n_Bacon";
+            Debug.Log($"조합 성공! 결과물: {combo.result}");
+
+            if (combo.resultPrefab != null)
+            {
+                Debug.Log("프리팹 인스턴스화 시작");
+                Instantiate(combo.resultPrefab, transform.position, Quaternion.identity);
+            }
+            else
+            {
+                Debug.LogError("프리팹이 비어 있습니다! 조합 결과 프리팹을 인스펙터에서 지정했는지 확인하세요.");
+            }
         }
-        else if ((ingredientName == "Flour" && otherName == "Egg") ||
-                 (ingredientName == "Egg" && otherName == "Flour"))
+        else
         {
-            resultProduct = "Cake";
+            Debug.Log("조합 실패: 등록된 조합이 없습니다.");
         }
 
-        if (!string.IsNullOrEmpty(resultProduct))
-        {
-            Debug.Log("조합 성공! 결과물: " + resultProduct);
-            CreateResultProduct(resultProduct);
-        }
-
-        // 재료 삭제
         Destroy(gameObject);
         Destroy(otherObject);
-    }
 
-    private void CreateResultProduct(string product)
-    {
-        if (product== "Bread_n_Bacon")
-        {
-            Vector3 spawnPosition = (transform.position);
-            Instantiate(Bread_and_Bacon, spawnPosition, Quaternion.identity);
-        }
     }
-
 }
