@@ -10,4 +10,5 @@ public class OrderData : ScriptableObject
     public string recipeName;
     public List<string> ingredients; // 순서 중요
     public Sprite recipeImage; // UI에 띄울 이미지 (삭제??)
+    public int score;
 }
