@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/ohclo/Documents/GitHub/VR_Cooking2/VRProject_1/Packages/manifest.json
+    m_FilePath: "C:/Users/user/OneDrive/\uBB38\uC11C/GitHub/VR_Cooking2/VRProject_1/Packages/manifest.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638838189715153771
-    m_Hash: 3612833868
+      ticks: 638851673355418106
+    m_Hash: 1544175310
   m_LockFileStatus:
-    m_FilePath: C:/Users/ohclo/Documents/GitHub/VR_Cooking2/VRProject_1/Packages/packages-lock.json
+    m_FilePath: "C:/Users/user/OneDrive/\uBB38\uC11C/GitHub/VR_Cooking2/VRProject_1/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638838189715169258
-    m_Hash: 1693443505
+      ticks: 638851673355492669
+    m_Hash: 1280752865
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/ohclo/Documents/GitHub/VR_Cooking2/VRProject_1/Packages
+m_ProjectPath: "C:/Users/user/OneDrive/\uBB38\uC11C/GitHub/VR_Cooking2/VRProject_1/Packages"
 m_EditorVersion: 2023.2.20f1 (0e25a174756c)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.2d.sprite@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.2d.sprite@1.0.0"
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -92,7 +92,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.ai.navigation@2.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.ai.navigation@2.0.0"
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -182,7 +182,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.3.0
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.animation.rigging@1.3.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.animation.rigging@1.3.0"
   assetPath: Packages/com.unity.animation.rigging
   name: com.unity.animation.rigging
   displayName: Animation Rigging
@@ -289,7 +289,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.7.1
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.collab-proxy@2.7.1
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.collab-proxy@2.7.1"
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -477,7 +477,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.28
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.ide.rider@3.0.28
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.ide.rider@3.0.28"
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -595,7 +595,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.22
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22"
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -698,7 +698,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 16.0.6
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.render-pipelines.universal@16.0.6
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.render-pipelines.universal@16.0.6"
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -853,7 +853,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.3.9
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.test-framework@1.3.9
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.test-framework@1.3.9"
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -998,7 +998,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.6
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.timeline@1.8.6
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.timeline@1.8.6"
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1177,7 +1177,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.ugui@2.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.ugui@2.0.0"
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1203,7 +1203,10 @@ m_ResolvedPackages:
     - 3.0.0-exp.1
     - 3.0.0-exp.3
     recommended: 2.0.0
-    deprecated: []
+    deprecated:
+    - 3.0.0-exp.1
+    - 3.0.0-exp.3
+    - 3.0.0-exp.4
   dependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -1263,7 +1266,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.0
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.visualscripting@1.8.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.visualscripting@1.8.0"
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1378,7 +1381,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.5.4
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.xr.interaction.toolkit@2.5.4
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.5.4"
   assetPath: Packages/com.unity.xr.interaction.toolkit
   name: com.unity.xr.interaction.toolkit
   displayName: XR Interaction Toolkit
@@ -1583,7 +1586,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.4.1
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.xr.management@4.4.1
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.xr.management@4.4.1"
   assetPath: Packages/com.unity.xr.management
   name: com.unity.xr.management
   displayName: XR Plugin Management
@@ -1731,7 +1734,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.2.0
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.xr.oculus@4.2.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.xr.oculus@4.2.0"
   assetPath: Packages/com.unity.xr.oculus
   name: com.unity.xr.oculus
   displayName: Oculus XR Plugin
@@ -1908,12 +1911,188 @@ m_ResolvedPackages:
     is to use the profiling tools available via the Oculus Developer Hub: https://developer.oculus.com/documentation/unity/ts-odh-logs-metrics/"}'
   assetStore:
     productId: 
+- packageId: com.unity.xr.openxr@1.10.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.10.0
+  source: 1
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.xr.openxr@1.10.0"
+  assetPath: Packages/com.unity.xr.openxr
+  name: com.unity.xr.openxr
+  displayName: OpenXR Plugin
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: OpenXR is an open, royalty-free standard developed by Khronos that
+    aims to simplify AR/VR development by allowing developers to target a wide range
+    of AR/VR devices. Use this plug-in to enable OpenXR in XR Plug-in Management.
+  errors: []
+  versions:
+    all:
+    - 0.1.1-preview.1
+    - 0.1.2-preview.2
+    - 1.0.0-pre.1
+    - 1.0.2
+    - 1.0.3
+    - 1.1.1
+    - 1.2.0
+    - 1.2.2
+    - 1.2.3
+    - 1.2.8
+    - 1.3.0
+    - 1.3.1
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.5.0-exp.1
+    - 1.5.0
+    - 1.5.1
+    - 1.5.3
+    - 1.6.0
+    - 1.7.0
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.1
+    - 1.10.0
+    - 1.11.0-exp.1
+    - 1.11.0
+    - 1.11.1-exp.1
+    - 1.12.0-exp.1
+    - 1.12.0
+    - 1.12.1
+    - 1.13.0
+    - 1.13.1
+    - 1.13.2
+    - 1.14.0
+    - 1.14.1
+    - 1.14.2
+    - 1.14.3
+    - 1.15.0-pre.1
+    - 1.15.0-pre.2
+    compatible:
+    - 1.10.0
+    - 1.11.0-exp.1
+    - 1.11.0
+    - 1.11.1-exp.1
+    - 1.12.0-exp.1
+    - 1.12.0
+    - 1.12.1
+    - 1.13.0
+    - 1.13.1
+    - 1.13.2
+    - 1.14.0
+    - 1.14.1
+    - 1.14.2
+    - 1.14.3
+    - 1.15.0-pre.1
+    - 1.15.0-pre.2
+    recommended: 1.10.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.inputsystem
+    version: 1.6.3
+  - name: com.unity.xr.core-utils
+    version: 2.1.1
+  - name: com.unity.xr.management
+    version: 4.4.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.2
+  resolvedDependencies:
+  - name: com.unity.inputsystem
+    version: 1.7.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.3.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.4.1
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  keywords:
+  - openxr
+  - xr
+  - reality
+  - xreditorsubsystem
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638421162980000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.10/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git
+    revision: 4e5ca6cb7ac702c659e04def4c4dd2f9b5a8b969
+    path: 
+  unityLifecycle:
+    version: 1.10.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n* Added `OpenXRSettings.VulkanAdditionalGraphicsQueue`
+    property to request at startup an additional Vulkan graphics queue in devices
+    that require it. The setting can be enabled through the Project settings UI and
+    build code.\n* Added `Optimize Buffer Discards (Vulkan)` feature setting option
+    within MetaQuestFeature.\n* Added a new optional validation rule to switch to
+    use InputSystem.Controls.StickControl instead of Vector2Control for thumbsticks.
+    StickControl allows more input options for thumbstick-based control, such as
+    acting as both a combined 2D vector, two independent axes or a four-way Dpad
+    with 4 independent buttons.\n\n### Changed\n* Updated project validation rule
+    for Meta Quest Feature - \"Select Oculus Touch Interaction Profile or Meta Quest
+    Pro Touch Interaction Profile to pair with.\" from error to warning to allow
+    other interaction profiles to be enabled as well, like eye gaze or palm pose.\n\n###
+    Fixed\n* Fixed Meta XR `Space Warp` feature crashing issue when trying to access
+    the depth swapchain.\n* Fixed Meta XR `Space Warp` depth subimage imageArrayIndex
+    setup wrong issue for multiview render mode.\n* Fixed a bug where Palm Pose won''t
+    work if the Eye Gaze Interaction Profile is added to the project.\n* Fixed \"The
+    type ''AnalyticsResult'' is defined in an assembly that is not referenced\" error
+    thrown.\n* Fixed UnitySwapchain destructor to completely destroy swapchains to
+    avoid memory leak.\n* Fixed OpenXR Settings UI to not render settings on platforms
+    that aren''t supported.\n* Fixed Android manifest entries were added when the
+    feature was not enabled."}'
+  assetStore:
+    productId: 
 - packageId: com.unity.modules.accessibility@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.accessibility@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.accessibility@1.0.0"
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -1975,7 +2154,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.ai@1.0.0"
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -2037,7 +2216,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.androidjni@1.0.0"
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -2098,7 +2277,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.animation@1.0.0"
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -2160,7 +2339,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.assetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -2222,7 +2401,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.audio@1.0.0"
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -2284,7 +2463,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.cloth@1.0.0"
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -2350,7 +2529,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.director@1.0.0"
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -2420,7 +2599,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.imageconversion@1.0.0"
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -2482,7 +2661,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.imgui@1.0.0"
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -2544,7 +2723,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.jsonserialize@1.0.0"
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -2606,7 +2785,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.particlesystem@1.0.0"
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -2668,7 +2847,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.physics@1.0.0"
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -2730,7 +2909,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.physics2d@1.0.0"
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -2792,7 +2971,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.screencapture@1.0.0"
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -2858,7 +3037,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.terrain@1.0.0"
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -2920,7 +3099,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.terrainphysics@1.0.0"
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -2990,7 +3169,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.tilemap@1.0.0"
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -3055,7 +3234,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.ui@1.0.0"
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -3117,7 +3296,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.uielements@1.0.0"
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -3195,7 +3374,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.umbra@1.0.0"
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -3257,7 +3436,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.unityanalytics@1.0.0"
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -3327,7 +3506,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.unitywebrequest@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -3389,7 +3568,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -3459,7 +3638,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -3529,7 +3708,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -3599,7 +3778,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -3685,7 +3864,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.vehicles@1.0.0"
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -3751,7 +3930,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.video@1.0.0"
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -3825,7 +4004,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.vr@1.0.0"
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -3901,7 +4080,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.wind@1.0.0"
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -3963,7 +4142,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.xr@1.0.0"
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -4037,7 +4216,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.subsystems@1.0.0"
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -4103,7 +4282,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.modules.hierarchycore@1.0.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.modules.hierarchycore@1.0.0"
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -4160,128 +4339,12 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-- packageId: com.unity.xr.legacyinputhelpers@2.1.10
-  testable: 0
-  isDirectDependency: 0
-  version: 2.1.10
-  source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.10
-  assetPath: Packages/com.unity.xr.legacyinputhelpers
-  name: com.unity.xr.legacyinputhelpers
-  displayName: XR Legacy Input Helpers
-  author:
-    name: 
-    email: 
-    url: 
-  category: XR
-  type: asset
-  description: This package includes the tracked pose driver for the legacy input
-    system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
-    Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects to
-    track input devices, the XR Bindings Seeding Tool adds a menu item under the
-    'Assets' menu which populates the Input Asset with Unity's crossplatform Input
-    Bindings
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    - 1.0.2
-    - 1.0.3
-    - 1.3.1
-    - 1.3.2
-    - 1.3.4
-    - 1.3.5
-    - 1.3.6
-    - 1.3.7
-    - 1.3.8
-    - 1.3.11
-    - 2.0.1
-    - 2.0.2
-    - 2.0.4
-    - 2.0.6
-    - 2.0.8
-    - 2.1.1
-    - 2.1.2
-    - 2.1.3
-    - 2.1.4
-    - 2.1.6
-    - 2.1.7
-    - 2.1.8
-    - 2.1.9
-    - 2.1.10
-    - 2.1.11
-    - 2.1.12
-    compatible:
-    - 2.1.10
-    - 2.1.11
-    - 2.1.12
-    recommended: 2.1.12
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  keywords:
-  - TPD
-  - Tracked Pose Driver
-  - XR
-  - Input
-  - Helpers
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637958908030000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
-    revision: 465ee12451634ea2b2986d54f6ae8be37316772a
-    path: 
-  unityLifecycle:
-    version: 2.1.10
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"Fixed a build error about a mismatch of the serialized
-    fields between Editor and Player due to `m_PoseProviderComponent`. That field
-    and its type is now always included, not just when `ENABLE_AR` or `ENABLE_VR`
-    are defined."}'
-  assetStore:
-    productId: 
 - packageId: com.unity.inputsystem@1.7.0
   testable: 0
   isDirectDependency: 0
   version: 1.7.0
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.inputsystem@1.7.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.inputsystem@1.7.0"
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -4447,95 +4510,12 @@ m_ResolvedPackages:
     not access a setter on child control properties."}'
   assetStore:
     productId: 
-- packageId: com.unity.mathematics@1.2.6
-  testable: 0
-  isDirectDependency: 0
-  version: 1.2.6
-  source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.mathematics@1.2.6
-  assetPath: Packages/com.unity.mathematics
-  name: com.unity.mathematics
-  displayName: Mathematics
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: Unity's C# SIMD math library providing vector types and math functions
-    with a shader like syntax.
-  errors: []
-  versions:
-    all:
-    - 0.0.12-preview.2
-    - 0.0.12-preview.5
-    - 0.0.12-preview.8
-    - 0.0.12-preview.10
-    - 0.0.12-preview.11
-    - 0.0.12-preview.13
-    - 0.0.12-preview.17
-    - 0.0.12-preview.19
-    - 0.0.12-preview.20
-    - 1.0.0-preview.1
-    - 1.0.1
-    - 1.1.0-preview.1
-    - 1.1.0
-    - 1.2.1
-    - 1.2.4
-    - 1.2.5
-    - 1.2.6
-    - 1.3.1
-    - 1.3.2
-    compatible:
-    - 1.2.6
-    - 1.3.1
-    - 1.3.2
-    recommended: 1.2.6
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - unity
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637841876140000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
-    revision: f110c8c230d253654afed153569030a587cc7557
-    path: 
-  unityLifecycle:
-    version: 1.2.6
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.xr.core-utils@2.3.0
   testable: 0
   isDirectDependency: 0
   version: 2.3.0
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.xr.core-utils@2.3.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.xr.core-utils@2.3.0"
   assetPath: Packages/com.unity.xr.core-utils
   name: com.unity.xr.core-utils
   displayName: XR Core Utilities
@@ -4649,12 +4629,211 @@ m_ResolvedPackages:
     Fixed\n\n- Fixed the XmlDocs issues for API documentation."}'
   assetStore:
     productId: 
+- packageId: com.unity.xr.legacyinputhelpers@2.1.10
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.10
+  source: 1
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers@2.1.10"
+  assetPath: Packages/com.unity.xr.legacyinputhelpers
+  name: com.unity.xr.legacyinputhelpers
+  displayName: XR Legacy Input Helpers
+  author:
+    name: 
+    email: 
+    url: 
+  category: XR
+  type: asset
+  description: This package includes the tracked pose driver for the legacy input
+    system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+    Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects to
+    track input devices, the XR Bindings Seeding Tool adds a menu item under the
+    'Assets' menu which populates the Input Asset with Unity's crossplatform Input
+    Bindings
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    - 1.0.2
+    - 1.0.3
+    - 1.3.1
+    - 1.3.2
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 1.3.7
+    - 1.3.8
+    - 1.3.11
+    - 2.0.1
+    - 2.0.2
+    - 2.0.4
+    - 2.0.6
+    - 2.0.8
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3
+    - 2.1.4
+    - 2.1.6
+    - 2.1.7
+    - 2.1.8
+    - 2.1.9
+    - 2.1.10
+    - 2.1.11
+    - 2.1.12
+    compatible:
+    - 2.1.10
+    - 2.1.11
+    - 2.1.12
+    recommended: 2.1.12
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  keywords:
+  - TPD
+  - Tracked Pose Driver
+  - XR
+  - Input
+  - Helpers
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637958908030000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
+    revision: 465ee12451634ea2b2986d54f6ae8be37316772a
+    path: 
+  unityLifecycle:
+    version: 2.1.10
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"Fixed a build error about a mismatch of the serialized
+    fields between Editor and Player due to `m_PoseProviderComponent`. That field
+    and its type is now always included, not just when `ENABLE_AR` or `ENABLE_VR`
+    are defined."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.mathematics@1.2.6
+  testable: 0
+  isDirectDependency: 0
+  version: 1.2.6
+  source: 1
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.mathematics@1.2.6"
+  assetPath: Packages/com.unity.mathematics
+  name: com.unity.mathematics
+  displayName: Mathematics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Unity's C# SIMD math library providing vector types and math functions
+    with a shader like syntax.
+  errors: []
+  versions:
+    all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.5
+    - 0.0.12-preview.8
+    - 0.0.12-preview.10
+    - 0.0.12-preview.11
+    - 0.0.12-preview.13
+    - 0.0.12-preview.17
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 1.0.0-preview.1
+    - 1.0.1
+    - 1.1.0-preview.1
+    - 1.1.0
+    - 1.2.1
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
+    - 1.3.1
+    - 1.3.2
+    compatible:
+    - 1.2.6
+    - 1.3.1
+    - 1.3.2
+    recommended: 1.2.6
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637841876140000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+    revision: f110c8c230d253654afed153569030a587cc7557
+    path: 
+  unityLifecycle:
+    version: 1.2.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
 - packageId: com.unity.ext.nunit@2.0.5
   testable: 0
   isDirectDependency: 0
   version: 2.0.5
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.ext.nunit@2.0.5
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5"
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -4728,7 +4907,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.13
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.burst@1.8.13
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.burst@1.8.13"
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -4879,6 +5058,7 @@ m_ResolvedPackages:
     - 1.8.19
     - 1.8.20
     - 1.8.21
+    - 1.8.22
     compatible:
     - 1.8.13
     - 1.8.14
@@ -4889,7 +5069,8 @@ m_ResolvedPackages:
     - 1.8.19
     - 1.8.20
     - 1.8.21
-    recommended: 1.8.21
+    - 1.8.22
+    recommended: 1.8.22
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -4957,7 +5138,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 16.0.6
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.render-pipelines.core@16.0.6
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.render-pipelines.core@16.0.6"
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -5160,7 +5341,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 16.0.6
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.shadergraph@16.0.6
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.shadergraph@16.0.6"
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -5356,7 +5537,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.9.2
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.searcher@4.9.2
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.searcher@4.9.2"
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -5437,7 +5618,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.2
   source: 2
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.rendering.light-transport@1.0.2
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.rendering.light-transport@1.0.2"
   assetPath: Packages/com.unity.rendering.light-transport
   name: com.unity.rendering.light-transport
   displayName: Unity Light Transport Library
@@ -5534,7 +5715,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.4.0
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.collections@1.4.0
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.collections@1.4.0"
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -5722,7 +5903,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.11.4
   source: 1
-  resolvedPath: C:\Users\ohclo\Documents\GitHub\VR_Cooking2\VRProject_1\Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4
+  resolvedPath: "C:\\Users\\user\\OneDrive\\\uBB38\uC11C\\GitHub\\VR_Cooking2\\VRProject_1\\Library\\PackageCache\\com.unity.nuget.mono-cecil@1.11.4"
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil

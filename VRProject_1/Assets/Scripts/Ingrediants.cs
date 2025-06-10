@@ -13,6 +13,8 @@ public class Ingrediants : MonoBehaviour
         Burned
     }
 
+    private string trashTag = "TrashBin";
+
     public string ingredientName;
     public BakeState bakeState = BakeState.Raw;
 
@@ -39,6 +41,11 @@ public class Ingrediants : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag(trashTag))
+        {
+            Destroy(gameObject);
+        }
+
         if (isCombined) return; // 이미 조합되었으면 무시
 
         if (other.CompareTag("Ingredient"))

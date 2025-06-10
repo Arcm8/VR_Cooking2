@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3493671325355607816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4246483140794229907}
+  - component: {fileID: 4542340438720122942}
+  m_Layer: 0
+  m_Name: Ingredient_combine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4246483140794229907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3493671325355607816}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.549, z: 0}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4542340438720122942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3493671325355607816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10aed5a0141048745860ef8b5f78dad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combinations:
+  - ingredientA: Bread
+    ingredientB: Cheese
+    result: Bread&Cheese
+    resultPrefab: {fileID: 8785258593010432500, guid: 6f04e24859145a144a18bf4993b98498,
+      type: 3}
+  - ingredientA: Bread&Cheese
+    ingredientB: Egg
+    result: Bread&Cheese&Egg
+    resultPrefab: {fileID: 119425951213834076, guid: 4c16b15f4bfbe0b41970de805a39e1db,
+      type: 3}
+  - ingredientA: Bread&Cheese&Egg
+    ingredientB: Bread
+    result: Basic_Sandwich
+    resultPrefab: {fileID: 6589831829798378012, guid: e69949b4157340647ba3a86a7b39b9cc,
+      type: 3}

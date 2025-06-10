@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Egg : MonoBehaviour
 {
-    public float breakVelocityThreshold = 3.5f; // ÀÌ ¼Óµµ ÀÌ»óÀÏ ¶§ ±úÁü
+    public float breakVelocityThreshold = 5f; // ÀÌ ¼Óµµ ÀÌ»óÀÏ ¶§ ±úÁü
     public GameObject brokenEggPrefab; // ±úÁø ´Ş°¿ ÇÁ¸®ÆÕ
 
     private bool isBroken = false;
