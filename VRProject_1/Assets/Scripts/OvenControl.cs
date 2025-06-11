@@ -8,6 +8,9 @@ public class OvenControl : MonoBehaviour
 {
     private GameObject currentBread;
 
+    public GameObject CheesePizza;
+    public GameObject CheesePepperoniPizza;
+
     public Slider cookingSlider;
     public float cookTime = 5f;
     public float burnTime = 3f;
@@ -21,9 +24,8 @@ public class OvenControl : MonoBehaviour
     private bool isCooked = false;
     private bool isBurnt = false;
 
-    public Material defaultMaterial;       // 처음 상태 메터리얼
-    public Material cookedMaterial;        // 익은 메터리얼
-    public Material burntMaterial;
+    private int pizzatype = 0;
+
     private float cookingProgress = 0f;
 
     private Ingrediants ingrediants;
@@ -31,8 +33,16 @@ public class OvenControl : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         var ingredientComponent = other.GetComponent<Ingrediants>();
-        if (ingredientComponent != null && ingredientComponent.ingredientName == "Dough" && !isCooking)
+        if (ingredientComponent != null && (ingredientComponent.ingredientName == "Dough_Cheese_Pepperoni_Corn" ^ ingredientComponent.ingredientName == "Dough_Cheese") && !isCooking)
         {
+            if (ingredientComponent.ingredientName== "Dough_Cheese")
+            {
+                pizzatype = 1;
+            }
+            else if (ingredientComponent.ingredientName== "Dough_Cheese_Pepperoni_Corn")
+            {
+                pizzatype = 2;
+            }
             ingrediants = other.GetComponent<Ingrediants>();
             currentBread = other.gameObject;
             isCooking = true;
@@ -47,8 +57,9 @@ public class OvenControl : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         var ingredientComponent = other.GetComponent<Ingrediants>();
-        if (ingredientComponent != null && ingredientComponent.ingredientName == "Dough" && !isCooking)
+        if (ingredientComponent != null && (ingredientComponent.ingredientName == "Dough_Cheese_Pepperoni_Corn" ^ ingredientComponent.ingredientName == "Dough_Cheese") && isCooking)
         {
+            pizzatype = 0;
             ingrediants = null;
             isCooking = false;
             currentBread = null;
@@ -69,36 +80,19 @@ public class OvenControl : MonoBehaviour
 
             if (cookingSlider.value >= 1f)
             {
-                isCooked = true;
+                //isCooked = true;
                 cookingProgress = 0f;
+                cookingSlider.value = Mathf.Clamp01(cookingProgress / cookTime);
                 sliderFillImage.color = cookedColor;
-
-                if (breadRenderer != null && cookedMaterial != null)
-                {
-                    breadRenderer.material = cookedMaterial;
-                }
                 ingrediants.SetBakeState(BakeState.Baked);
-            }
-        }
-        else if (isCooking && isCooked && !isBurnt)
-        {
-            cookingProgress += Time.deltaTime;
-            cookingSlider.value = Mathf.Clamp01(cookingProgress / burnTime);
-            sliderFillImage.color = Color.Lerp(cookedColor, burntColor, cookingSlider.value);
-
-            if (cookingSlider.value >= 1f)
-            {
-                isBurnt = true;
-               // sizzlingSound.Stop();
-
-                if (breadRenderer != null && burntMaterial != null)
+                if (pizzatype == 1)
                 {
-                    breadRenderer.material = burntMaterial;
+                    Instantiate(CheesePizza, transform.position, Quaternion.identity);
                 }
-                ingrediants.SetBakeState(BakeState.Burned);
-
-
-                // 여기서 게임오버, 실패처리 등 추가 가능
+                else if (pizzatype == 2)
+                {
+                    Instantiate(CheesePepperoniPizza, transform.position, Quaternion.identity);
+                }
             }
         }
     }

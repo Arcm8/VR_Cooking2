@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public class SubmitManager : MonoBehaviour
 {
     public Transform submitZoneCenter;        // 제출 영역 중심 위치
-    public float detectionRadius = 0.5f;       // 감지 반경
+    public float detectionRadius = 3f;       // 감지 반경
     public StageManager stageManager;         // StageManager 참조
 
     public bool ignoreOrder = true;           // 순서 무시 여부

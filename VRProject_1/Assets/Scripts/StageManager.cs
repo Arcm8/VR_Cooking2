@@ -156,7 +156,7 @@ public class StageManager : MonoBehaviour
         }
 
         uiManager.ShowResult(success, totalScore); // 결과 UI 호출
-        Time.timeScale = 0f; // 일시정지
+        //Time.timeScale = 0f; // 일시정지
     }
 
  

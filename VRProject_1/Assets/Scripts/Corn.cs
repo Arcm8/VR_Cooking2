@@ -24,7 +24,6 @@ public class Corn : MonoBehaviour
         if (impactSpeed >= breakVelocityThreshold)
         {
             TakeDamage(20f); // 원하는 만큼 데미지 조정
-            Instantiate(brokenEggPrefab, transform.position, Quaternion.identity);
         }
     }
 
@@ -37,6 +36,7 @@ public class Corn : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Instantiate(brokenEggPrefab, transform.position, Quaternion.identity);
         currentHP -= damage;
         currentHP = Mathf.Clamp(currentHP, 0, maxHP);
         UpdateHealthUI();

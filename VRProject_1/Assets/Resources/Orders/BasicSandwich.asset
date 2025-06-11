@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc479f00bce0c8f4da911f68fa210149, type: 3}
   m_Name: BasicSandwich
   m_EditorClassIdentifier: 
-  recipeName: "\uAE30\uBCF8 \uC0CC\uB4DC\uC704\uCE58"
+  recipeName: Basic_Sandwich
   ingredients:
   - "\uAD6C\uC6B4\uC2DD\uBE75"
   - "\uB9C8\uC694\uB124\uC988"

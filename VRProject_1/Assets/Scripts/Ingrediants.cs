@@ -87,6 +87,8 @@ public class Ingrediants : MonoBehaviour
             {
                 Debug.Log("프리팹 인스턴스화 시작");
                 Instantiate(combo.resultPrefab, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+                Destroy(otherObject);
             }
             else
             {
@@ -98,8 +100,6 @@ public class Ingrediants : MonoBehaviour
             Debug.Log("조합 실패: 등록된 조합이 없습니다.");
         }
 
-        Destroy(gameObject);
-        Destroy(otherObject);
 
     }
 }
