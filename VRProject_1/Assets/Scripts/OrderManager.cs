@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-
+using System.Linq;
 
 /// 게임 내 주문 생성 및 검증
 
@@ -35,15 +35,7 @@ public class OrderManager : MonoBehaviour
     }
 
  
-    /// 현재 스테이지에 맞는 난이도의 새로운 주문을 생성하고 UI에 표시
-
-    public void SpawnNewOrder()
-    {
-        int recipeCount = Mathf.Min(recipeDB.recipes.Count, GetRecipeCountForStage(currentStage));
-        currentOrder = recipeDB.recipes[Random.Range(0, recipeCount)];
-        Debug.Log("주문 생성: " + currentOrder.recipeName);
-        uiManager.DisplayOrder(currentOrder);
-    }
+   
 
     /// 스테이지별로 사용할 수 있는 레시피 개수를 반환
     /// <param name="stage">스테이지 번호</param>
@@ -111,5 +103,40 @@ public class OrderManager : MonoBehaviour
             }
             return true;
         }
+    }
+    // ① 시도된 주문 이름들
+    private List<string> attemptedOrders = new List<string>();
+    // ② 성공한 주문 이름들
+    private List<string> successOrders = new List<string>();
+
+    public void SpawnNewOrder()
+    {
+        int recipeCount = Mathf.Min(recipeDB.recipes.Count, GetRecipeCountForStage(currentStage));
+        currentOrder = recipeDB.recipes[Random.Range(0, recipeCount)];
+
+        // 새 주문이 생성될 때마다 “시도된” 리스트에 추가
+        attemptedOrders.Add(currentOrder.recipeName);
+
+        Debug.Log("주문 생성: " + currentOrder.recipeName);
+        uiManager.DisplayOrder(currentOrder);
+    }
+
+    /// StageManager.OnOrderCompleted 에서 성공 처리 직전에 호출해 주세요
+    public void RecordSuccess()
+    {
+        successOrders.Add(currentOrder.recipeName);
+    }
+
+    // 외부에서 성공·실패 이름 리스트를 꺼내 쓸 수 있도록
+    public List<string> GetSuccessNames()
+    {
+        return successOrders.ToList();            // 복사본 반환
+    }
+    public List<string> GetFailNames()
+    {
+        // 시도는 했으나 successOrders에 없는 것들 = 실패
+        return attemptedOrders
+               .Where(name => !successOrders.Contains(name))
+               .ToList();
     }
 }

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public class SubmitManager : MonoBehaviour
 {
     public Transform submitZoneCenter;        // 제출 영역 중심 위치
-    public float detectionRadius = 3f;       // 감지 반경
+    public float detectionRadius = 0.5f;       // 감지 반경
     public StageManager stageManager;         // StageManager 참조
 
     public bool ignoreOrder = true;           // 순서 무시 여부
@@ -41,6 +41,7 @@ public class SubmitManager : MonoBehaviour
                 else
                 {
                     Debug.Log("제출 실패 - 잘못된 요리");
+                    stageManager.orderManager.SpawnNewOrder();
                 }
 
                 return; // 첫 번째 감지된 요리만 처리

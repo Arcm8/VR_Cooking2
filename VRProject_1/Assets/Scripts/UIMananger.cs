@@ -95,7 +95,7 @@ public class UIManager : MonoBehaviour
    
     public void RetryStage()
     {
-       // FindObjectOfType<StageManager>().RetryCurrentStage();
+        FindObjectOfType<StageManager>().RetryCurrentStage();
     }
 
    

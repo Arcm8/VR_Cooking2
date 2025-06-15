@@ -421,10 +421,12 @@ MonoBehaviour:
   maxStage: 6
   orderManager: {fileID: 6569223660909543177}
   uiManager: {fileID: 2658691276475621934}
+  receiptAnimator: {fileID: 0}
+  receiptManager: {fileID: 0}
   audioSource: {fileID: 8004871192754153118}
-  failClip: {fileID: 8300000, guid: 64842f90bc044e5419b46f5a5b066836, type: 3}
-  clearClip: {fileID: 8300000, guid: 1ce694dbd407cac47bc2f21b48cda05a, type: 3}
   warningClip: {fileID: 8300000, guid: 5bf6fda98d3432a43b7b6c17235e404e, type: 3}
+  clearClip: {fileID: 8300000, guid: 1ce694dbd407cac47bc2f21b48cda05a, type: 3}
+  failClip: {fileID: 8300000, guid: 64842f90bc044e5419b46f5a5b066836, type: 3}
 --- !u!1 &1901750874717847078
 GameObject:
   m_ObjectHideFlags: 0

@@ -87,7 +87,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: -0.8, z: 1}
+  m_LocalScale: {x: 0.45, y: 0.36, z: 0.45}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7925498418240067170}
@@ -360,7 +360,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   healthSlider: {fileID: 7262155330671785838}
-  objectToSpawnOnDeath: {fileID: 0}
+  objectToSpawnOnDeath: {fileID: 4755326526322114694, guid: 43170384b4b95bd4a84bf2042e2b4c67,
+    type: 3}
 --- !u!1001 &3918314671161028569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 3486223154847329847, guid: c545e64b6c3e09748a240eb819fcb590,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.884
+      value: 0.867
       objectReference: {fileID: 0}
     - target: {fileID: 3486223154847329847, guid: c545e64b6c3e09748a240eb819fcb590,
         type: 3}

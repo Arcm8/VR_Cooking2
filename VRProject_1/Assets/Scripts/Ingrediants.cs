@@ -41,26 +41,31 @@ public class Ingrediants : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("콜라이드!");
+
         if (other.CompareTag(trashTag))
         {
             Destroy(gameObject);
+            return;
         }
 
-        if (isCombined) return; // 이미 조합되었으면 무시
+        if (isCombined) return;
 
         if (other.CompareTag("Ingredient"))
         {
             Ingrediants otherIngredient = other.GetComponent<Ingrediants>();
+            if (otherIngredient == null) return;
+            if (otherIngredient.isCombined) return;
 
-            // 상대도 이미 조합되었으면 무시
-            if (otherIngredient == null || otherIngredient.isCombined) return;
+            Debug.Log($"재료 1 : {ingredientName}, 상태: {bakeState} | 재료 2 : {otherIngredient.ingredientName}, 상태: {otherIngredient.bakeState}");
 
             if (CanCombineWith(otherIngredient))
             {
-                // 조합 처리
+                Debug.Log($"[조합 가능] this ID: {GetInstanceID()}, other ID: {other.GetInstanceID()}");
+
+                // 그냥 둘 다 아직 조합되지 않았으면 조합 실행
                 isCombined = true;
                 otherIngredient.isCombined = true;
-
                 CombineIngredients(other.gameObject, otherIngredient);
             }
             else

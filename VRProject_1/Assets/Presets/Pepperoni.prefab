@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2836836715005009363}
   - component: {fileID: 5170018588819797200}
   - component: {fileID: 7561549793311001585}
+  - component: {fileID: -7731112683843541692}
   m_Layer: 0
   m_Name: Pepperoni
   m_TagString: Ingredient
@@ -235,6 +236,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.42075723, y: 0.037688255, z: 0.4003619}
   m_Center: {x: -0.0045976937, y: 0.0033587217, z: 0.006979525}
+--- !u!114 &-7731112683843541692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194781771399030010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9772b12a42ba74e9cfae77d3565389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Pepperoni
+  bakeState: 1
 --- !u!1001 &5998259426694926809
 PrefabInstance:
   m_ObjectHideFlags: 0
