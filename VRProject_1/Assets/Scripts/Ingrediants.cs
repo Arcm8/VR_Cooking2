@@ -49,24 +49,26 @@ public class Ingrediants : MonoBehaviour
             return;
         }
 
-        if (isCombined) return;
-
         if (other.CompareTag("Ingredient"))
         {
             Ingrediants otherIngredient = other.GetComponent<Ingrediants>();
             if (otherIngredient == null) return;
-            if (otherIngredient.isCombined) return;
 
-            Debug.Log($"재료 1 : {ingredientName}, 상태: {bakeState} | 재료 2 : {otherIngredient.ingredientName}, 상태: {otherIngredient.bakeState}");
+            Debug.Log($"재료 1 : {ingredientName} ({bakeState}) | 재료 2 : {otherIngredient.ingredientName} ({otherIngredient.bakeState})");
 
             if (CanCombineWith(otherIngredient))
             {
-                Debug.Log($"[조합 가능] this ID: {GetInstanceID()}, other ID: {other.GetInstanceID()}");
+                // 조합 주도권: Y값이 더 낮은 오브젝트가 조합 수행
+                if (transform.position.y <= other.transform.position.y)
+                {
+                    Debug.Log("내가 아래에 있으니 조합 시작!");
 
-                // 그냥 둘 다 아직 조합되지 않았으면 조합 실행
-                isCombined = true;
-                otherIngredient.isCombined = true;
-                CombineIngredients(other.gameObject, otherIngredient);
+                    CombineIngredients(other.gameObject, otherIngredient);
+                }
+                else
+                {
+                    Debug.Log("상대가 아래에 있어, 조합을 맡김");
+                }
             }
             else
             {

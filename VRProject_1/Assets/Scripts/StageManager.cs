@@ -92,12 +92,12 @@ public class StageManager : MonoBehaviour
 
         switch (stage)
         {
-            case 1: goalOrders = 2; stageTime = 5f; break;
-            case 2: goalOrders = 3; stageTime = 90f; break;
-            case 3: goalOrders = 3; stageTime = 90f; break;
-            case 4: goalOrders = 4; stageTime = 120f; break;
-            case 5: goalOrders = 3; stageTime = 100f; break;
-            case 6: goalOrders = 3; stageTime = 120f; break;
+            case 1: goalOrders = 1; stageTime = 5f; break;
+            case 2: goalOrders = 1; stageTime = 90f; break;
+            case 3: goalOrders = 1; stageTime = 90f; break;
+            case 4: goalOrders = 1; stageTime = 120f; break;
+            case 5: goalOrders = 1; stageTime = 100f; break;
+            case 6: goalOrders = 1; stageTime = 120f; break;
         }
         currentTime = stageTime;
 

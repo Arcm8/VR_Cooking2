@@ -86,6 +86,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 1
@@ -103,7 +104,7 @@ Material:
     - _GlossMapScale: 0.579
     - _Glossiness: 0.94
     - _GlossyReflections: 1
-    - _Metallic: 0.34
+    - _Metallic: 0.864
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02

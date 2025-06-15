@@ -4,17 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+  m_Scenes: []
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bcb7855a18a95b34481a4ab7e703a602,
-      type: 2}
-    com.unity.input.settings: {fileID: 11400000, guid: 462a8ce67da5dbc41bb72d2874e9bcde,
-      type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ae19e83d9ea4aa142b15c729979dc2f0,
-      type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: fc21b5f202749fb4ea009c20ad6b52d8,
-      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4439d2696b66e2f418f2b154bd7edd33, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: fc21b5f202749fb4ea009c20ad6b52d8, type: 2}
   m_UseUCBPForAssetBundles: 0
