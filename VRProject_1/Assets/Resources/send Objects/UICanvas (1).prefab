@@ -68,8 +68,7 @@ MonoBehaviour:
   m_text: "\uD0C0\uC774\uBA38"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
-  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83,
-    type: 2}
+  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -756,8 +755,7 @@ MonoBehaviour:
   m_text: "\uC8FC\uBB38"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
-  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83,
-    type: 2}
+  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1171,8 +1169,7 @@ MonoBehaviour:
   m_text: stage
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
-  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83,
-    type: 2}
+  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1528,8 +1525,7 @@ MonoBehaviour:
   m_text: "\uCD1D \uC810\uC218 "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
-  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83,
-    type: 2}
+  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1803,8 +1799,7 @@ MonoBehaviour:
   m_text: "\uC810\uC218 \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
-  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83,
-    type: 2}
+  m_sharedMaterial: {fileID: 716878965554938072, guid: ebd600a7396af884c94b9167c6530e83, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2067,7 +2062,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8074314440836578608
 MonoBehaviour:
   m_ObjectHideFlags: 0

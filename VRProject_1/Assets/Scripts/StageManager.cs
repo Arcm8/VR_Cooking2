@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class StageManager : MonoBehaviour
     [Header("Dependencies")]
     public OrderManager orderManager;
     public UIManager uiManager;
+    public Button NextStageButton;
 
     [Header("Receipt Animation")]
     public Animator receiptAnimator;   // Inspector에서 할당
@@ -85,6 +87,10 @@ public class StageManager : MonoBehaviour
 
     void InitStage(int stage)
     {
+        if (NextStageButton != null)
+            NextStageButton.interactable = false;
+
+
         stageRunning = true;
         warningPlayed = false;
         completedOrders = 0;
@@ -110,6 +116,9 @@ public class StageManager : MonoBehaviour
 
     void EndStage(bool success)
     {
+        if (NextStageButton != null)
+            NextStageButton.interactable = true;
+
         stageRunning = false;
 
         // 1) 사운드 & UI 처리…
@@ -135,7 +144,7 @@ public class StageManager : MonoBehaviour
         receiptAnimator.SetBool("Drop", true);
 
         // 4) 게임 일시정지
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
     }
 
 
