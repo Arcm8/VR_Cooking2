@@ -68,4 +68,12 @@ public class gamaManager : MonoBehaviour
     {
         return CurrentData.unlockedUpgrades.Contains(upgradeId);
     }
+
+    public int GetCoins()
+    {
+        return CurrentData.coins;
+    }
+
+
+
 }

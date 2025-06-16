@@ -98,14 +98,12 @@ public class UIManager : MonoBehaviour
         FindObjectOfType<StageManager>().RetryCurrentStage();
     }
 
-   
+
     /// 실시간 점수를 UI에 표시한다.
-   
-    public void UpdateScore(int score)
+
+    public void UpdateScore(int stageScore)
     {
         if (scoreText != null)
-            scoreText.text = "점수: " + score.ToString();
-        else
-            Debug.LogWarning("scoreText가 연결되어 있지 않습니다!");
+            scoreText.text = "점수: " + stageScore;
     }
 }

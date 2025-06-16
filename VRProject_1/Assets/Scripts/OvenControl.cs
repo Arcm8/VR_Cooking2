@@ -75,16 +75,17 @@ public class OvenControl : MonoBehaviour
             cookingProgress += Time.deltaTime;
             cookingSlider.value = Mathf.Clamp01(cookingProgress / cookTime);
 
-           // if (!sizzlingSound.isPlaying)
-              //  sizzlingSound.Play();
+            // if (!sizzlingSound.isPlaying)
+            //  sizzlingSound.Play();
 
             if (cookingSlider.value >= 1f)
             {
-                //isCooked = true;
                 cookingProgress = 0f;
                 cookingSlider.value = Mathf.Clamp01(cookingProgress / cookTime);
                 sliderFillImage.color = cookedColor;
                 ingrediants.SetBakeState(BakeState.Baked);
+
+                // ?? 새로운 피자 생성
                 if (pizzatype == 1)
                 {
                     Instantiate(CheesePizza, transform.position, Quaternion.identity);
@@ -93,6 +94,15 @@ public class OvenControl : MonoBehaviour
                 {
                     Instantiate(CheesePepperoniPizza, transform.position, Quaternion.identity);
                 }
+
+                // ? 기존 도우 제거
+                Destroy(currentBread);
+
+                // ?? 상태 초기화
+                isCooking = false;
+                pizzatype = 0;
+                ingrediants = null;
+                currentBread = null;
             }
         }
     }

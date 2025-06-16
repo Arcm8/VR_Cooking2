@@ -41,6 +41,8 @@ public class Ingrediants : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (isCombined) return; // 이미 조합되었으면 무시
+
         Debug.Log("콜라이드!");
 
         if (other.CompareTag(trashTag))
@@ -52,7 +54,7 @@ public class Ingrediants : MonoBehaviour
         if (other.CompareTag("Ingredient"))
         {
             Ingrediants otherIngredient = other.GetComponent<Ingrediants>();
-            if (otherIngredient == null) return;
+            if (otherIngredient == null || otherIngredient.isCombined) return; // 상대도 이미 조합되었으면 무시
 
             Debug.Log($"재료 1 : {ingredientName} ({bakeState}) | 재료 2 : {otherIngredient.ingredientName} ({otherIngredient.bakeState})");
 
@@ -62,7 +64,6 @@ public class Ingrediants : MonoBehaviour
                 if (transform.position.y <= other.transform.position.y)
                 {
                     Debug.Log("내가 아래에 있으니 조합 시작!");
-
                     CombineIngredients(other.gameObject, otherIngredient);
                 }
                 else
@@ -84,6 +85,10 @@ public class Ingrediants : MonoBehaviour
 
     private void CombineIngredients(GameObject otherObject, Ingrediants otherIngredient)
     {
+        if (isCombined || otherIngredient.isCombined) return; // 중복 방지
+        isCombined = true;
+        otherIngredient.isCombined = true;
+
         var combo = IngredientCombine.Instance.GetCombination(ingredientName, otherIngredient.ingredientName);
 
         if (combo != null)
@@ -105,8 +110,8 @@ public class Ingrediants : MonoBehaviour
         else
         {
             Debug.Log("조합 실패: 등록된 조합이 없습니다.");
+            isCombined = false;
+            otherIngredient.isCombined = false;
         }
-
-
     }
 }

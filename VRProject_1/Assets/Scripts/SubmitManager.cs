@@ -18,42 +18,47 @@ public class SubmitManager : MonoBehaviour
     /// 제출 버튼이 눌렸을 때 실행되는 함수
     /// 제출 영역에 있는 'Completed' 태그 오브젝트를 검사하고 TAG 옵션
     /// 주문과 일치하면 주문 완료 처리
-  
+
     public void OnSubmitButtonPressed()
     {
         Collider[] hits = Physics.OverlapSphere(submitZoneCenter.position, detectionRadius);
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag("Completed"))
+            if (!hit.CompareTag("Completed"))
+                continue;
+
+            string resultName = CleanName(hit.name);
+            string expected = stageManager.orderManager.GetCurrentOrder().recipeName;
+
+            Debug.Log($"제출된 요리: {resultName} / 기대한 요리: {expected}");
+
+            //  성공 여부 판단
+            if (ignoreOrder || resultName == expected)
             {
-                string resultName = CleanName(hit.name); // 오브젝트 이름에서 "_Completed" 제거
-                string expected = stageManager.orderManager.GetCurrentOrder().recipeName;
-
-                Debug.Log("제출된 요리: " + resultName + " / 기대한 요리: " + expected);
-
-                // 순서 무시이거나 이름이 일치하면 성공 처리
-                if (ignoreOrder || resultName == expected)
-                {
-                    stageManager.OnOrderCompleted(); // 주문 완료 처리
-                    Destroy(hit.gameObject);         // 제출된 요리 제거
-                }
-                else
-                {
-                    Debug.Log("제출 실패 - 잘못된 요리");
-                    stageManager.orderManager.SpawnNewOrder();
-                }
-
-                return; // 첫 번째 감지된 요리만 처리
+                // ? 성공 처리 ?
+                stageManager.OnOrderCompleted();
+                Destroy(hit.gameObject);
             }
+            else
+            {
+                // ? 실패 처리 ?
+                Debug.Log($"제출 실패 - 잘못된 요리: {resultName}");
+                stageManager.orderManager.RecordFailure(resultName);  // 실패 기록
+                Destroy(hit.gameObject);                             // (선택) 잘못된 요리 제거
+                stageManager.orderManager.SpawnNewOrder();           // 다음 주문 생성
+            }
+
+            return; // 첫 감지된 하나만 처리
         }
 
         Debug.Log("제출된 요리가 없습니다.");
     }
 
 
+
     /// 오브젝트 이름에서 "_Completed" 접미사를 제거
-    
+
     string CleanName(string objName)
     {
         return objName.Replace("_Completed", "");

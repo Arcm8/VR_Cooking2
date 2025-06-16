@@ -29,6 +29,9 @@ public class OrderManager : MonoBehaviour
     /// 현재 스테이지 번호를 설정
 
     /// <param name="stage">스테이지 번호</param>
+    /// 
+
+
     public void SetStage(int stage)
     {
         currentStage = stage;
@@ -108,7 +111,8 @@ public class OrderManager : MonoBehaviour
     private List<string> attemptedOrders = new List<string>();
     // ② 성공한 주문 이름들
     private List<string> successOrders = new List<string>();
-
+    // 실패한 주문 이름
+    private List<string> failOrders = new List<string>();
     public void SpawnNewOrder()
     {
         int recipeCount = Mathf.Min(recipeDB.recipes.Count, GetRecipeCountForStage(currentStage));
@@ -135,8 +139,19 @@ public class OrderManager : MonoBehaviour
     public List<string> GetFailNames()
     {
         // 시도는 했으나 successOrders에 없는 것들 = 실패
-        return attemptedOrders
-               .Where(name => !successOrders.Contains(name))
-               .ToList();
+        return failOrders.ToList();
     }
+    /// 실패를 기록하는 메서드
+    public void RecordFailure(string recipeName)
+    {
+        failOrders.Add(recipeName);
+    }
+    // 스테이지 초기화 시 기록을 모두 지우는 메서드
+    public void ResetRecords()
+    {
+        attemptedOrders.Clear();
+        successOrders.Clear();
+        failOrders.Clear();
+    }
+
 }

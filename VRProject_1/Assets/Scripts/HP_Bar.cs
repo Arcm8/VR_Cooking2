@@ -21,10 +21,19 @@ public class HP_Bar : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Sword")) // 칼의 태그를 "Sword"로 설정
+        if (other.CompareTag("Sword"))
         {
-            Debug.Log("collision");
-            TakeDamage(10f); // 원하는 만큼 데미지 조정
+            Sword sword = other.GetComponent<Sword>();
+            if (sword != null)
+            {
+                Debug.Log("collision with sword, damage: " + sword.damage);
+                TakeDamage(sword.damage);
+            }
+            else
+            {
+                Debug.LogWarning("Sword 컴포넌트가 없음! 기본 데미지 10 적용");
+                //TakeDamage(10f); // 기본값
+            }
         }
     }
 
