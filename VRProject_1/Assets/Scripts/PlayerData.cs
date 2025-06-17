@@ -24,6 +24,8 @@ public class PlayerData : MonoBehaviour
         DontDestroyOnLoad(gameObject); // 씬 변경 시에도 유지
     }
 
+    public int GetCoins() => coins;
+
     public void AddCoins(int amount)
     {
         coins += amount;

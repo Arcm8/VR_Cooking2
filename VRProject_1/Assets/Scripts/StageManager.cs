@@ -35,7 +35,7 @@ public class StageManager : MonoBehaviour
         totalScore = 0;
         InitStage(currentStage);
         //에디터로 실험
-        TestFirstSubmission();
+       //TestFirstSubmission();
     }
 
     void Update()
@@ -166,12 +166,12 @@ public class StageManager : MonoBehaviour
 
         switch (stage)
         {
-            case 1: goalOrders = 3; stageTime = 30f; break;
-            case 2: goalOrders = 3; stageTime = 90f; break;
-            case 3: goalOrders = 3; stageTime = 90f; break;
-            case 4: goalOrders = 4; stageTime = 120f; break;
-            case 5: goalOrders = 3; stageTime = 100f; break;
-            case 6: goalOrders = 3; stageTime = 120f; break;
+            case 1: goalOrders = 1; stageTime = 30f; break;   //임시로 하나로 수정
+            case 2: goalOrders = 1; stageTime = 90f; break;
+            case 3: goalOrders = 1; stageTime = 90f; break;
+            case 4: goalOrders = 1; stageTime = 120f; break;
+            case 5: goalOrders = 1; stageTime = 100f; break;
+            case 6: goalOrders = 1; stageTime = 120f; break;
         }
         currentTime = stageTime;
         Debug.Log($"[Debug InitStage] stage={stage}, goalOrders={goalOrders}, stageTime={stageTime}");
@@ -220,7 +220,7 @@ public class StageManager : MonoBehaviour
         receiptAnimator.SetBool("Drop", true);
 
         // 4) 게임 일시정지
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
     }
 
 

@@ -21,6 +21,7 @@ public class Skybox : MonoBehaviour
 
     void Start()
     {
+        StartDayTransition();
         RenderSettings.skybox = skyboxMaterial;
     }
 
@@ -51,8 +52,8 @@ public class Skybox : MonoBehaviour
         Color ambientFrom = (fromColor == dayColor) ? ambientDayColor : ambientNightColor;
         Color ambientTo = (toColor == dayColor) ? ambientDayColor : ambientNightColor;
 
-        float fromLightIntensity = (fromColor == dayColor) ? 1.2f : 0.1f;
-        float toLightIntensity = (toColor == dayColor) ? 1.2f : 0.1f;
+        float fromLightIntensity = (fromColor == dayColor) ? 1.2f : 0f;  // ¹ã¿£ 0À¸·Î ²¨¹ö¸®±â
+        float toLightIntensity = (toColor == dayColor) ? 1.2f : 0f;
 
         while (timer < transitionDuration)
         {
@@ -69,7 +70,8 @@ public class Skybox : MonoBehaviour
             {
                 sunLight.intensity = Mathf.Lerp(fromLightIntensity, toLightIntensity, t);
                 sunLight.color = Color.Lerp(nightColor, Color.white, t);
-                sunLight.transform.rotation = Quaternion.Euler(Mathf.Lerp(170f, 50f, t), 30f, 0f);
+
+                sunLight.transform.rotation = Quaternion.Euler(Mathf.Lerp(0f, -60f, t), 0f, 0f);
             }
 
             timer += Time.deltaTime;
