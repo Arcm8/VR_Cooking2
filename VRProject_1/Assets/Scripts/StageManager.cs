@@ -8,6 +8,8 @@ public class StageManager : MonoBehaviour
     public int currentStage = 1;
     public int maxStage = 6;
 
+    public GameObject NextSTGButton;
+
     private float currentTime;
     private int completedOrders = 0;
     private bool stageRunning = true;
@@ -17,6 +19,9 @@ public class StageManager : MonoBehaviour
     [Header("Dependencies")]
     public OrderManager orderManager;
     public UIManager uiManager;
+    public EffectManager effectManager;
+
+    private bool reachedGoal = false;
 
     [Header("Receipt Animation")]
     public Animator receiptAnimator;   // Inspector에서 할당
@@ -28,7 +33,12 @@ public class StageManager : MonoBehaviour
     public AudioClip clearClip;
     public AudioClip failClip;
 
-    
+    [Header("Stage BGM")]
+    public AudioSource bgmSource;
+    public AudioClip stageBGM;
+    public AudioClip repairBGM;
+
+
     void Start()
     {
         // 여기서만 게임 전체를 0으로 세팅
@@ -54,10 +64,10 @@ public class StageManager : MonoBehaviour
        
            if (currentTime <= 0f)
                {
-            currentTime = 0f;                 // 음수 방지
-            uiManager.UpdateTimer(0f);        // 화면에 0초 보여주기
-            EndStage(false);                  // 실패 처리만 하고
-               }
+                currentTime = 0f;                 // 음수 방지
+                 uiManager.UpdateTimer(0f);        // 화면에 0초 보여주기
+                    EndStage(reachedGoal);                  // 실패 처리만 하고
+                }
     }
 
 
@@ -123,14 +133,11 @@ public class StageManager : MonoBehaviour
 
         if (completedOrders >= goalOrders)
         {
-            Debug.Log("[Debug OnOrderCompleted] 조건 충족! EndStage(true) 호출");
-            EndStage(true);
+            reachedGoal = true; // 목표는 달성했지만 아직 스테이지 종료는 아님
         }
-        else
-        {
-            Debug.Log("[Debug OnOrderCompleted] 아직 목표치 미달, SpawnNewOrder 호출");
-            orderManager.SpawnNewOrder();
-        }
+
+        // 어쨌든 계속 주문 생성
+        orderManager.SpawnNewOrder();
     }
 
     public void OnClickNextStage()
@@ -145,6 +152,9 @@ public class StageManager : MonoBehaviour
 
     void InitStage(int stage)
     {
+        NextSTGButton.SetActive(false);
+        effectManager.StageStart();
+
         // 0) 스테이지 진입할 때만 초기화
         completedOrders = 0;
         stageScore = 0;    // 스테이지 점수 리셋
@@ -152,6 +162,10 @@ public class StageManager : MonoBehaviour
 
         orderManager.ResetRecords();
         // ────── ① 영수증 리셋: 항상 올라간 상태로 세팅 ──────
+
+        PlayStageBGM();
+
+
         if (receiptAnimator != null)
         {
             // timeScale이 1인 동안엔 정상 재생 모드로
@@ -187,7 +201,8 @@ public class StageManager : MonoBehaviour
     void EndStage(bool success)
     {
         stageRunning = false;
-
+        NextSTGButton.SetActive(true);
+        effectManager.NextSTG();
 
         // ─── 시간 초과(=success==false) 시점에도 실패를 기록 ───
         if (!success)
@@ -221,6 +236,10 @@ public class StageManager : MonoBehaviour
 
         // 4) 게임 일시정지
         //Time.timeScale = 0f;
+
+        bgmSource.Stop();
+
+        gamaManager.Instance.AddCoins(stageScore);
     }
 
 
@@ -231,5 +250,25 @@ public class StageManager : MonoBehaviour
         if (totalScore < 0) totalScore = 0;  // 안전장치
         Time.timeScale = 1f;
         InitStage(currentStage);
+    }
+
+    public void PlayStageBGM()
+    {
+        if (bgmSource != null && stageBGM != null)
+        {
+            bgmSource.Stop();
+            bgmSource.clip = stageBGM;
+            bgmSource.Play();
+        }
+    }
+
+    public void PlayRepairBGM()
+    {
+        if (bgmSource != null && repairBGM != null)
+        {
+            bgmSource.Stop();
+            bgmSource.clip = repairBGM;
+            bgmSource.Play();
+        }
     }
 }

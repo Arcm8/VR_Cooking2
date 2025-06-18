@@ -12,7 +12,13 @@ public class SubmitManager : MonoBehaviour
     public float detectionRadius = 0.5f;       // 감지 반경
     public StageManager stageManager;         // StageManager 참조
 
-    public bool ignoreOrder = true;           // 순서 무시 여부
+    public bool ignoreOrder = false;           // 순서 무시 여부
+
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip cashClip;
+
 
 
     /// 제출 버튼이 눌렸을 때 실행되는 함수
@@ -39,6 +45,11 @@ public class SubmitManager : MonoBehaviour
                 // ? 성공 처리 ?
                 stageManager.OnOrderCompleted();
                 Destroy(hit.gameObject);
+
+                if (audioSource != null && cashClip != null)
+                {
+                    audioSource.PlayOneShot(cashClip);
+                }
             }
             else
             {
@@ -61,6 +72,9 @@ public class SubmitManager : MonoBehaviour
 
     string CleanName(string objName)
     {
-        return objName.Replace("_Completed", "");
+        return objName
+        .Replace("_Completed", "")
+        .Replace("(Clone)", "")
+        .Trim();
     }
 }

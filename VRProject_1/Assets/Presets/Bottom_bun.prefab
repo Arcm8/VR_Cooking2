@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 873810440961326663}
   m_Layer: 0
   m_Name: Bottom_bun
-  m_TagString: Untagged
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

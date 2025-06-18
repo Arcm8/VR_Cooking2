@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc479f00bce0c8f4da911f68fa210149, type: 3}
   m_Name: PeperoniPizza
   m_EditorClassIdentifier: 
-  recipeName: "\uD398\uD37C\uB85C\uB2C8\uD53C\uC790"
+  recipeName: Pepperoni_Pizza
   ingredients:
   - "\uB3C4\uC6B0"
   - "\uD1A0\uB9C8\uD1A0\uC18C\uC2A4"

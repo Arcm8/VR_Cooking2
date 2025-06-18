@@ -6,9 +6,12 @@ using System.Linq;
 
 public class OrderManager : MonoBehaviour
 {
-   
+
+
+    private OrderData lastOrder;
+
     /// 전체 레시피 정보를 담고 있는 레시피 DB
-  
+
     public RecipeDatabase recipeDB;
 
    
@@ -43,19 +46,6 @@ public class OrderManager : MonoBehaviour
     /// 스테이지별로 사용할 수 있는 레시피 개수를 반환
     /// <param name="stage">스테이지 번호</param>
     /// <returns>레시피 개수</returns>
-    private int GetRecipeCountForStage(int stage)
-    {
-        switch (stage)
-        {
-            case 1: return 3;
-            case 2: return 5;
-            case 3: return 7;
-            case 4: return 10;
-            case 5: return 14;
-            case 6: return 18;
-            default: return 3;
-        }
-    }
 
  
     /// 제출된 요리 재료가 현재 주문과 정확히 일치하는지 확인 (순서 포함) ( 완성 요리 이름으로 할 예정 )
@@ -115,13 +105,18 @@ public class OrderManager : MonoBehaviour
     private List<string> failOrders = new List<string>();
     public void SpawnNewOrder()
     {
-        int recipeCount = Mathf.Min(recipeDB.recipes.Count, GetRecipeCountForStage(currentStage));
-        currentOrder = recipeDB.recipes[Random.Range(0, recipeCount)];
+        OrderData newOrder;
 
-        // 새 주문이 생성될 때마다 “시도된” 리스트에 추가
+        do
+        {
+            newOrder = recipeDB.recipes[Random.Range(0, recipeDB.recipes.Count)];
+        }
+        while (newOrder == lastOrder && recipeDB.recipes.Count > 1);
+
+        currentOrder = newOrder;
+        lastOrder = newOrder;
+
         attemptedOrders.Add(currentOrder.recipeName);
-
-        Debug.Log("주문 생성: " + currentOrder.recipeName);
         uiManager.DisplayOrder(currentOrder);
     }
 
